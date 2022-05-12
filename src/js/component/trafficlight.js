@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from "react";
 
 const Traffic = () => {
-	const [color, setcolor] = useState();
+	const [color, setcolor] = useState("red");
 	return (
 		<div className="d-flex justify-content-center">
-			<div className="stick"></div>
 			<div className="trafficLight">
-				<div className="Light red mx-auto"></div>
-				<div className="Light yellow mx-auto"></div>
-				<div className="Light green mx-auto"></div>
+				<div
+					onClick={() => setcolor("red")}
+					className={
+						"Light red" + (color === "red" ? " glow" : "")
+					}></div>
+				<div
+					onClick={() => setcolor("yellow")}
+					className={
+						"Light yellow" + (color === "yellow" ? " glow" : "")
+					}></div>
+				<div
+					onClick={() => setcolor("green")}
+					className={
+						"Light green" + (color === "green" ? " glow" : "")
+					}></div>
 			</div>
 		</div>
 	);

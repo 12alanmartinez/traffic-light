@@ -11,27 +11,19 @@
 
 */
 
-.stick{
-    height: 100px;
-    background: black;
-    width: 50px;
-    padding-left: 50px;
 
-}
 .trafficLight{
-    height: 190px;
+    height: 155px;
     width: 100px;
     background: purple;
     margin-top: 100px;
-    
-    
-
 }
 
 
 .Light{
     border-radius: 50%;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .red{
@@ -39,6 +31,7 @@
     width: 50px;
     height: 50px;
 border-radius: 50px;
+margin: auto;
 }
 
 .yellow{
@@ -46,12 +39,17 @@ border-radius: 50px;
     width: 50px;
     height: 50px;
     border-radius: 50px;
-
+    margin: auto;
 }
 .green{
     background: green;
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    margin: auto;
     
+}
+.glow{
+    box-shadow: 0px 0px 9px 4px gold;
+
 }
